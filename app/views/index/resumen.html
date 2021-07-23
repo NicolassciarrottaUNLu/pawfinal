@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	(include)includes/head.html(/include)
+	<body>
+	
+		(include)includes/header.html(/include)
+		
+		<main id= "carrito" class="carrito">
+				<table class="lista-compra" id="lista-compra">
+					<thead>
+						<tr>
+							<th>
+								<label for="nombre">Nombre</label>
+							</th>
+							<th colspan="4" scope="col" id="nameClient" class="dataClient">
+								{name}
+							</th>
+						</tr>
+						<tr>
+							<th>
+								<label for="Dirección">Dirección</label>
+							</th>
+							<th colspan="4" scope="col" id="directionClient" class="dataClient">
+								{direction}
+							</th>
+						</tr>
+						<tr>
+							<th>
+								<label for="Telefono">Teléfono</label>
+							</th>
+							<th colspan="4" scope="col" id="phoneNumberClient" class="dataClient">
+								{phoneNumber}
+							</th>
+						</tr>
+					</thead>
+					<tbody class="table-fondo">
+					</tbody>
+					<tr>
+						<th class="endTable comment">
+							<label for="Comentarios">Comentarios</label>
+						</th>
+						<th class="endTable" colspan="4" scope="col" id="commentClient">
+							{comment}
+						</th>
+					</tr>
+					<tr class="endTable">
+						<th colspan="4" scope="col" >Envío</th>
+						<th scope="col">
+							<span>$</span><span class="envio" id="envioR"></span>
+						</th>
+					</tr>
+					<tr class="endTable">
+						<th colspan="4" scope="col">TOTAL </th>
+						<th scope="col">
+							<span>$</span><span class="carritoTotal" id="totalCart"></span>
+						</th>
+					</tr>
+					<tr class= "endTable">
+						<th colspan="5" scope="col">
+							<a href="#" target="_blank" class ="endOfDelivery">
+							Enviar pedido
+							</a>
+						</th>
+					</tr>
+				</table>
+		</main>
+		(include)includes/footer.html(/include)
+	</body>
+</html>

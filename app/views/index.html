@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		(include)includes/head.html(/include)
+	</head>
+	<body>
+		(include)includes/header.html(/include)
+		<main>	
+			<section class = "Ofertas">
+				<h2>Ofertas</h2>
+					<div class = "contenedor_slider">
+						<div id="derecha"> <img src="/assets/images/chevron_right.png" alt="derecha">  </div>
+						<div id="izquierda"><img src="/assets/images/chevron_left.png" alt="Izquierda"> </div>
+						<div class = "slider">
+							[ofertas]
+							<article class = "slide">
+									<img src="/uploads/{imagen}" alt="{nombre}">
+							</article>				
+							[/ofertas]
+						</div>
+					</div>
+			</section>
+			
+			<section class="categorias">
+				<h2>Categorías</h2>
+				<div>
+				[categorias]
+				<article>
+					<a href="/index/producto?id={id}">
+						<header>
+							<figure>
+								<img src="{imagen}" alt="{nombre}">
+								<figcaption>{cantidad} variedades</figcaption>
+							</figure>
+						</header>
+						<h5>{nombre}</h5>
+					</a>
+				</article>
+				[/categorias]
+			</div>
+			</section>
+		</main>
+		(include)includes/footer.html(/include)
+	</body>
+</html>

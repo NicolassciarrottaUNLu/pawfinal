@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<table>
+				<tr>
+					<th>Imagen</th>
+					<th>Nombre</th>
+					<th>Acciones</th>
+				</tr>
+				
+				[categorias]
+				<tr>
+					<td><img src="/uploads/{imagen}" alt="{nombre}"></td>
+					<td>{nombre}</td>
+					<td>
+						<ul>
+							<li>
+								<a href="/admin/editar/categoria?id={id}">Editar</a>
+							</li>
+							<li>
+								<a href="/admin/borrar/categoria?id={id}">Borrar</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				[/categorias]
+			</table>
+			
+		</main>		
+	</body>
+	<footer>
+		(include)admin/includes/footer.html(/include)
+	</footer>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<form action="/admin/guardar/producto" method="POST" enctype="multipart/form-data" id='form-prod'>
+				<input type="hidden" name="id" value="{id}">
+				
+				<div>
+					<label for="categoria">Categoria</label>
+					<select id="categoria" name="categoria">
+					[categorias]
+						<option value="{id}" {selected}>{nombre}</option>
+					[/categorias]
+					</select>
+				</div>
+				<div>
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" value="{nombre}" required>
+				</div>
+				<div>
+					<label for="precio">Precio</label>
+					<input type="number" id="precio" name="precio" step="1" min="1" placeholder="Precio ($)" value="{precio}" required>
+				</div>
+				<div>
+					<label for="validohasta">Valido Hasta</label>
+					<input type="date" id="validohasta" name="validohasta" value="{validohasta}" required>
+				</div>
+				<div>
+					<label for="calificacion">Calificacion</label>
+					<input type="number" id="calificacion" name="calificacion" step="1" min="1" max="5" placeholder="Calificacion" value="{calificacion}" required>
+				</div>
+				<div>
+					<label for="fecha">Fecha de calificacion</label>
+					<input type="date" id="fecha" name="fecha" value="{fecha}" required>
+				</div>
+				<div>
+					<label for="imagen">Imagen</label>
+					<input type="file" id="imagen" name="imagen" accept="image/x-png,image/jpeg" required/>
+				</div>
+				<div>
+					<input type="submit" value="Guardar">
+				</div>
+
+			</form>
+			
+		</main>	
+		
+	</body>
+</html>

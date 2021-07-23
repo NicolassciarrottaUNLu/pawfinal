@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'Cosmic Lager';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CosmicLager'), url('CosmicLager.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'High Voltage';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HighVoltage'), url('HighVoltage.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Grand Hotel';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GrandHotel-Regular'), url('GrandHotel-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Montserrat-Medium'), url('Montserrat-Medium.ttf') format('truetype');
+}

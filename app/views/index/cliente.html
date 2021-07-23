@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	(include)includes/head.html(/include)
+	<body>
+		(include)includes/header.html(/include)
+		<main>
+			<h2> Datos de envío</h2>
+			<form action="/index/resumen" method="get" class="form-client" enctype="multipart/form-data">
+				<div>
+					<label for="name"><i class="fas fa-user"></i></label>
+					<input type="text" name="name" id="name" placeholder="Nombre" title="Ingresa tu nombre" required>
+					<div>
+						<p>{nameErr}</p>
+					</div>
+				</div>
+				<div>
+					<label for="direction"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="text" name="direction" id="direction" placeholder="Dirección" title="Ingresa tu dirección" required>
+					<div>
+						<p>{directionErr}</p>
+					</div>
+				</div>
+				<div>
+					<label for="phoneNumber"><i class="fas fa-phone"></i></label>
+					<input type="text" name="phoneNumber" id="phoneNumber" placeholder="Teléfono" title="Ingresa tu número de celular" required>
+					<div>
+						<p>{phoneNumberErr}</p>
+					</div>
+				</div>
+				<div>
+					<textarea type="text" name="comment" id="comment" placeholder="Comentario" title="Ingresa un comentario de ser necesario"></textarea>
+				</div>
+				<input type="submit" value="Finalizar compra">
+			</form>
+		</main>
+		(include)includes/footer.html(/include)
+	</body>
+</html>

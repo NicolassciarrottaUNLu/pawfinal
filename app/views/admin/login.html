@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+		<main>	
+				
+			<form action="/admin/login" method="POST" class="login">	
+				<figure>
+					<img src="/assets/images/logo.png">
+				</figure>				
+				
+				<div>
+					<label for="usuario">Usuario</label>
+					<input type="text" name="user" id="usuario" placeholder="Usuario">
+				</div>
+				<div>
+					<label for="usuario">Contraseña</label>
+					<input type="password" name="pass" id="password" placeholder="Contraseña">
+				</div>
+				[mensajes]
+					<blockquote class="{style}">{mensaje}</blockquote>
+				[/mensajes]	
+				
+				<div>
+					<input type="submit" value="Iniciar">
+				</div>
+			</form>			
+		</main>		
+	</body>
+</html>

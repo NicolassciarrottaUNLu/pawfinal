@@ -1,0 +1,347 @@
+html {
+    background-color: #E6CDAE;
+	--fondo: #E6CDAE;
+    --sombras:#8A7256;
+    --letra:#3B0F11;
+    --mancha:#A63017;
+}
+
+body {
+    max-width: 80em;
+    margin: 5vh auto;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+    background: radial-gradient(#fff,#fdfdfd);
+    padding: 1em;
+    box-sizing: border-box;
+    font-family: "Arial";
+    font-size: 12pt;
+    border-radius: .2em;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+}
+body > header {
+    border-bottom: .1em solid #eee;
+    margin-bottom: 1.25em;
+    background-color: var(--fondo);
+    padding: 1em;
+}
+
+button, [type="button"], [type="reset"], [type="submit"], a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    margin: .25em;
+    line-height: 1.5em;
+    color: #fff;
+    background-color:brown;
+    font-size: 1.2em;
+    display: block;
+    height: auto;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+}
+
+a:hover {
+    color:black;
+}
+body > header > header > nav:nth-of-type(2) > ul{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > header > header > nav > ul:nth-of-type(2) li:nth-of-type(1){
+    color:white;
+    text-transform: uppercase;
+}
+
+body > header > header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header > header nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+input[type="submit"] {
+    background-color: var(--sombras);
+}
+
+input[type="submit"]:hover{
+    background-color: #c8d6e5;
+    color:black;
+}
+body > header > header nav ul li a:first-child {
+    background-color: transparent;
+    border-bottom: 2px solid;
+    line-height: 1em;
+}
+body > header > header nav ul li a {
+    margin: 0;
+}
+table {
+    width: 100%;
+  
+    border-collapse: collapse;
+    text-align: center;
+}
+tr ,th ,td{
+    border: 1px solid black;
+}
+table tr td ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+table tr:first-child{
+    background-color: var(--mancha);
+    color: white;
+}
+
+table tr:first-child:hover{
+    background-color: var(--mancha);
+}
+
+table tr:hover {
+  background-color: #ecf0f1;
+}
+
+table th, table td {
+    padding: .5em;
+    line-height: 1.2em;
+    width: 100%;
+}
+table th {
+    text-transform: uppercase;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1.25em;
+}
+
+form > div:last-child {
+    flex-basis: 100%;
+    background-color: #fafafa;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0 0 0;
+    flex-direction: row;
+}
+
+form > div {
+    padding: 1em;
+    min-width: 30%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #3B0F11;
+    display: block;
+    margin-bottom: .5em;
+}
+
+form input, form select {
+    line-height: 3em;
+    min-height: 2em;
+    padding: 0 .5em;
+    border: none;
+    flex: 1;
+    display: flex;
+    border: 2px solid #eee;
+}
+.login figure img {
+    max-height: 10em;
+    margin: 0 auto;
+    display: block;
+}
+body > header > header img {
+    max-height: 5.5em;
+}
+body > header > header nav ul li a:first-child:last-child {
+    border-bottom: none;
+}
+blockquote {
+    padding: 1em;
+    margin: 0;
+    border-left: .5em solid;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.success {
+    border-color: #27ae60;
+    background-color: #2ecc71;
+    color: #ecf0f1;
+}
+.error {
+    border-color: #c0392b;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+}
+table td img {
+    max-width: 12em;
+    max-height: 12em;
+}
+
+.categorias {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #89807B;
+    border: 1px solid #89807B;
+    overflow: hidden;
+}
+
+.categorias > article {
+    text-align: center;
+    flex-basis: 25%;
+    min-width: 16em;
+    flex: 1;
+    padding: 2em;
+    border: 1px solid #89807B;
+}
+.categorias > article > a{
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+}
+.categorias > article > a:hover {
+    background-color: #ddd;
+}
+.categorias > article:nth-child(1), .categorias > article:nth-child(3n + 1) {
+    background-color: rgba(255,255,255,.95);
+}
+
+.categorias > article:nth-child(2), .categorias > article:nth-child(3n + 2) {
+    background-color: rgba(255,255,255,.90);
+}
+
+.categorias > article:nth-child(3), .categorias > article:nth-child(3n + 3) {
+    background-color: rgba(255,255,255,.85);
+}
+
+.categorias >article h5 {
+    color: #86817B;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.categorias > article header > figure{
+    margin: 0;
+}
+.categorias > article header > figure > img {
+    height: 5em;
+}
+
+.categorias > article header > figure > figcaption {
+    font-size: 3em;
+    line-height: 1.5em;
+    color: var(--color-main-dark);
+    margin: .5em 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categorias > article header > figure > figcaption::after {
+    content: "";
+    display: block;
+    width: 2em;
+    border-bottom: 2px solid #ddd;
+}
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+
+.buttonState{
+    display: block;
+}
+
+.back{
+    background-color: none;
+    font-size:1.5em;
+    text-decoration:underline;
+    color: brown;
+    user-select: none;
+    margin-bottom: 1em;
+}
+
+.back:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+@media (max-width:900px){
+
+    body > header > header nav {
+        display: block;
+    }
+    body > header > header img {
+        max-height: 5em;
+    }
+    
+    body > header > header > nav:nth-of-type(2) > ul{
+        display: block;
+    }
+    body > header > header > nav:nth-last-of-type(2) > ul li {
+        display: block;
+    }
+
+    body > header > header > nav:nth-of-type(2) > ul > li:nth-of-type(4){
+        
+        border-right: none;
+        
+        border-bottom: 3.5px solid black;
+    }
+
+    table th, table td{
+        padding:0;
+        font-size: 10pt;
+    }
+    table td img {
+        width: 5em;
+    } 
+
+    table tr td ul {
+        display:block;
+    }
+
+    button, [type="button"], [type="reset"], [type="submit"], a {
+        padding: 0.5em 0.5em;
+        font-size: 1em;
+    }
+    
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<form action="/admin/guardar/oferta" method="POST" enctype="multipart/form-data">
+				<input type="hidden" name="id" value="{id}">
+				<div>
+					<label for="producto">Producto</label>
+					<select id="producto" name="producto">
+					[productos]
+					<option value="{id}" {selected}>{nombre}</option>
+					[/productos]
+					</select>
+				</div>
+				<div>
+					<label for="descripcion">Descripción</label>
+					<input type="text" name="descripcion" id="descripcion" value="{descripcion}" required>
+				</div>
+				<div>
+					<label for="imagen">Imagen</label>
+					<input type="file" id="imagen" name="imagen" accept="image/x-png,image/jpeg" />
+				</div>
+				<div>
+					<input type="submit" value="Guardar">
+				</div>
+			</form>
+		</main>		
+	</body>
+</html>

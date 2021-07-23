@@ -1,0 +1,24 @@
+{
+  "name": "Tu escabio",
+  "description": "Tu escabio - Venta de bebidas alcoholicas",
+  "short_name": "Tu escabio",
+  "background_color": "#ffffff",
+  "theme_color": "#A63017",	
+  "icons": [	
+    {
+      "src": "/base/pwa/low.png",
+      "type": "image/png",
+      "sizes": "16x16 32x32 48x48 72x72"
+    },
+    {
+      "src": "/base/pwa/hi.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+	],	
+  "lang": "es",
+  "dir": "ltr",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

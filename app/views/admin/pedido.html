@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<table>
+				<tr>
+					<th>Pedido n°</th>
+					<th>Direccion</th>
+					<th>Estado</th>
+					<th>Ver</th>
+                    <th>Accion</th>
+				</tr>
+				[pedidos]
+				<tr class="rowDel">
+					<td>{numero}</td>
+					<td>{direccion}</td>
+					<td class="state">{estado}</td>
+					<td><a href="/admin/ver/pedido?id={id}">Ver</a></td>
+					<td>
+						<ul class ="buttonState" data-state="{estado}" data-id="{id}">
+							<a href="#" class = "btn1" id="toprint"data-id="{id}">Pasado</a>
+						</ul>
+					</td>
+				</tr>
+				[/pedidos]
+				
+			</table>
+			<div>
+				<a href="#" class="delday" id="delday">Eliminar pedidos diarios</a>
+			</div>
+		</main>		
+	</body>
+	<footer>
+		(include)admin/includes/footer.html(/include)
+	</footer>
+</html>

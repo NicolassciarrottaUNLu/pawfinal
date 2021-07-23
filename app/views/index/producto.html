@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	(include)includes/head.html(/include)
+	<body>
+	
+		(include)includes/header.html(/include)
+		
+		<main>
+			<h2>{nombre_categoria}</h2>
+			<section class="productos" id="productos">
+				[listado]
+					<!-- <article data-tsc="{id}" class="lprod" id="lprod">
+						<input type="hidden" name="pid" id="pid" value="{id}">		
+						<input type="hidden" name="pcat" id="pcat" value="{nombre_categoria}">
+						<figure>
+							<img itemprop="image" src="/uploads/{imagen}" alt="{nombre}">
+							<figcaption itemprop="name">{nombre}</figcaption>
+							<h3>$ {precio}</h3>
+						</figure>
+						<a href="#" class="cart-toggle addToCart">Agregar al carrito</a>
+					</article> -->
+					<article data-tsc="{id}" itemscope itemtype="http://schema.org/Product" class="lprod" id="lprod">
+						<span itemprop="gtin8" content="499676" class="hidden"></span>	
+						<span itemprop="brand" content="{categoria}" class="hidden"></span>	
+						<span itemprop="description" content="Tenemos stock de {nombre} para entrega inmediata." class="hidden"></span>	
+						<span itemprop="sku" content="{categoria}/{id}" class="hidden"></span>	
+						<div class="hidden" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+						 <span itemprop="ratingValue">{calificacion}</span>/5 <span itemprop="reviewCount">1</span>
+						</div>
+						<div class="hidden" itemprop="review" itemscope itemtype="http://schema.org/Review">
+							<span itemprop="name" content="Recomendacion"></span>
+							<span itemprop="author" content="Tu Escabio"></span>
+							<meta itemprop="datePublished" content="{fecha}">
+							<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+								<meta itemprop="worstRating" content = "1"/>
+								<span itemprop="ratingValue">{calificacion}</span>
+								<span itemprop="bestRating">5</span>
+							</div>
+							<span itemprop="description" content="Producto recomendado"></span>
+						</div>
+						<figure>
+							<img itemprop="image" src="/uploads/{imagen}" alt="{nombre}">
+							<figcaption itemprop="name">{nombre}</figcaption>
+							<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<span itemprop="url" content="https://paw.craving.com.ar/index/individual?id={id}"></span>
+								<span itemprop="priceValidUntil" content="{validohasta}"></span>
+								<h3><span itemprop="priceCurrency" content="AR$">$</span> <span itemprop="price" content="{precio}">{precio}</span></h3>
+								<link itemprop="availability" href="http://schema.org/InStock" />
+							</div>
+						</figure>
+						<a href="#" class="cart-toggle addToCart">Agregar al carrito</a>
+					</article>
+				[/listado]
+			</section>
+		</main>
+		(include)includes/footer.html(/include)
+	</body>
+</html>

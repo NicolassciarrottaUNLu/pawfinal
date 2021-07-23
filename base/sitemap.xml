@@ -1,0 +1,17 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>https://finalpaw.000webhostapp.com/</loc>
+		<lastmod>2020-07-01T02:20:11+00:00</lastmod>
+		<priority>1.00</priority>
+	</url>
+	<url>
+		<loc>https://finalpaw.000webhostapp.com/index/quienessomos</loc>
+		<lastmod>2020-07-01T02:20:11+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://finalpaw.000webhostapp.com/index/frecuentes</loc>
+		<lastmod>2020-07-01T02:20:11+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+</urlset>

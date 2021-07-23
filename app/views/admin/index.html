@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+		
+			<h1>Bienvenido [usuario]{nombre}[/usuario]</h1>
+			
+			<section class="categorias">
+				[categorias]
+				<article>
+					<header>
+						<figure>
+							<img src="/{imagen}" alt="{nombre}">
+							<figcaption>{cantidad}</figcaption>
+						</figure>
+					</header>
+					<h5>{nombre}</h5>
+				</article>
+				[/categorias]
+			</section>
+			
+		</main>		
+	</body>
+	<footer>
+		(include)admin/includes/footer.html(/include)
+	</footer>
+</html>

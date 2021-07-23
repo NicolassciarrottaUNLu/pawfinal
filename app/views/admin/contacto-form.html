@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<form action="/admin/guardar/contacto" method="POST" enctype="multipart/form-data">
+				<input type="hidden" name="id" value="{id}">
+				<div>
+					<label for="tipo">Tipo de contacto</label>
+					<select name="tipo" id="tipo">
+						<option value="http://">Link</option>
+						<option value="tel:+">Teléfono</option>
+						<option value="mailto:">Email</option>
+					</select>
+				</div>
+				<div>
+					<label for="contacto">Contacto</label>
+					<input type="text" id="contacto" name="contacto" placeholder="Contacto" value="{contacto}" required>
+				</div>
+				<div>
+					<label for="informacion">Informacion</label>
+					<input type="text" id="informacion" name="informacion" placeholder="Informacion" value="{informacion}" required>
+				</div>
+				<div>
+					<label for="imagen">Icono</label>
+					<input type="file" id="imagen" name="imagen" accept="image/x-png,image/jpeg,image/ico" />
+				</div>
+				<div>
+					<input type="submit" value="Guardar">
+				</div>
+			</form>
+			
+		</main>		
+	</body>
+</html>

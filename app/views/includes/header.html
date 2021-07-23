@@ -1,0 +1,61 @@
+<header>
+	<div id="contenedor-carga"><div id="cargador"><img src="/assets/images/logo.png" alt=""></div></div>
+	<div id="correcto"></div>
+	<aside>#QUEDATEENCASA | ENVÍOS A TODO EL PAÍS</aside>
+	
+	<nav> 
+		<ul>
+			<li><a href="/"><img src="/assets/images/logo.png" alt="Colon" title="Inicio" id="logo"></a>
+		</ul>
+		<div class="hero">
+			<input type="search" placeholder="Buscar" title="Buscar por categoria o nombre de producto">
+			<ul>
+				[productos]
+				<li data-tsc="{id}" class='lprod' data-tsc="{id}">
+					<figure >
+						<img src="/uploads/{imagen}">
+						<figcaption>
+							<div>
+								<span id="nprod">{nombre}</span><br>
+								<strong ><span id="cprod">{categoria}</span></strong>
+							</div>
+						</figcaption>
+						<h3>$ {precio}</h3>
+						<input type="hidden" id="price" data-precio="{precio}" content="{precio}">
+					</figure>
+					<a href="#" class="cart-toggle addToCart cartHero">Agregar al carrito</a>
+				</li>
+				[/productos]
+			</ul>
+		</div>
+		<ul>
+			<li class="cart" id="cart">
+				<a href="#" class="cart-toggle" id="cart-toggle">
+					<figure>
+						<img src="/assets/images/carro.png" alt="Carrito">
+						<span id="num_productos">0</span>	
+						<figcaption>Mi carrito</figcaption>
+					</figure>
+				</a>
+				<ul class="cart-detail">
+						<li class="cart-resume" id="cart-resume">				
+							<figure>
+								<img src="/assets/images/logo.png">
+								<figcaption>
+									<div>
+										<span>Total $</span><span id="carritoTotal"></span><br>
+										<strong><span>Envio<span id="envio"></span></strong>
+									</div>
+								</figcaption>
+							</figure>
+							<div id="car"></div>	
+							<div id="bot">
+								<a href="#" id="comprar">COMPRAR</a>
+								<a href="#" id="vaciarCarrito">VACIAR</a>
+							</div>
+						</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>

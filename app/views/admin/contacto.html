@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<table>
+				<tr>
+					<th>Contacto</th>
+					<th>Informacion</th>
+					<th>Acciones</th>
+				</tr>
+				
+				[contactos]
+				<tr>
+					<td>{contacto}</td>
+					<td>{informacion}</td>
+					<td>
+						<ul>
+							<li>
+								<a href="/admin/editar/contacto?id={id}">Editar</a>
+							</li>
+							<li>
+								<a href="/admin/borrar/contacto?id={id}">Borrar</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				[/contactos]
+			</table>
+			
+		</main>		
+	</body>
+	<footer>
+		(include)admin/includes/footer.html(/include)
+	</footer>
+</html>

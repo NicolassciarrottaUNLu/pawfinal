@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		(include)admin/includes/head.html(/include)
+	</head>
+	<body>		
+	
+		<header>
+			(include)admin/includes/header.html(/include)
+		</header>
+		
+		<main>
+			[mensajes]
+				<blockquote class="{style}">{mensaje}</blockquote>
+			[/mensajes]
+			<table>
+				<tr>
+					<th>Imagen</th>
+					<th>Categoría</th>
+					<th>Nombre</th>
+					<th>Precio</th>
+					<th>Acciones</th>
+				</tr>
+				
+				[productos]
+				<tr>
+					<td><img src="/uploads/{imagen}" alt="{nombre}"></td>
+					<td>{categoria}</td>
+					<td>{nombre}</td>
+					<td>$ {precio}</td>
+					<td>
+						<ul>
+							<li>
+								<a href="/admin/editar/producto?id={id}">Editar</a>
+							</li>
+							<li>
+								<a href="/admin/borrar/producto?id={id}">Borrar</a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				[/productos]
+			</table>
+			
+		</main>		
+	</body>
+	<footer>
+		(include)admin/includes/footer.html(/include)
+	</footer>
+</html>
