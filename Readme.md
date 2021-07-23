@@ -12,11 +12,9 @@ Tanto los productos,las categorías, las ofertas y los medios de contacto pueden
 
 ### Accesos:
 Los accesos al sitio son:
-- https://paw.craving.com.ar , este es el acceso para los clientes del sitio sin CDN.
-- https://paw.craving.net.ar , es el mismo sitio que el anterior pero con CDN.
-- https://paw.craving.com.ar/admin/login , es el sitio administrativo sin CDN.
-- https://paw.craving.net.ar/admin/login , sitio administrativo con CDN.
-- https://facebook.com/Practica-PAW-111093277302797/shop/ tienda de Facebook.
+- https://finalpaw.000webhostapp.com/ , este es el acceso para los clientes del sitio.
+- https://finalpaw.000webhostapp.com/admin/login , es el sitio administrativo.
+- https://facebook.com/Practica-PAW-111093277302797/shop/ tienda de Facebook (Esta obsoleta por falta de uso y restricciones de marcas).
 - https://instagram.com/_practica_paw página de Instagram (No funciona, no habilitaron la opción de comprar por Instagram por falta de requisitos de la página).
 
 ### Tecnologías utilizadas
